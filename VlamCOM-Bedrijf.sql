@@ -130,7 +130,7 @@ VALUES
 ('Bnnny', 'Goedman', 'Database Administrator', 2, 'Turnhout', 3900.00),
 ('Leon', 'Berg', 'IT Specialist', 1, 'Herentals', 4300.00),
 ('Alberto', 'Gomez', 'Content Writer', 4, 'Kasterlee', 3100.00),
-('Murat', 'Çelik', 'Support Technician', 2, 'Poppel', 2700.00);
+('Murat', 'Çelik', 'Support Technician', 2, 'Poppel', 2700.00),
 ('Tijs', 'Vermeulen', 'Software Engineer', 1, 'Antwerpen', 3200.00),
 ('Aagje', 'Krause', 'Projectmanager', 2, 'Brugge', 2900.00),
 ('Wil', 'Sneller', 'System Administrator', 3, 'Kortrijk', 3100.00),
