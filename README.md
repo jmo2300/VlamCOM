@@ -1,12 +1,18 @@
 # VlamCOM
 Fictief Communicatie en software bedrijf in Vlaanderen.
 
-Vanuit Linux makkelijk installeerbaar met
-
+Samenvatting installatie VlamcomDB:
 ```bash
+cd
 git clone https://github.com/jmo2300/VlamCOM
 ```
 
+
+```bash
+cd VlamCOM/
+chmod +x setup.sh
+./setup.sh
+```
 
 
 
