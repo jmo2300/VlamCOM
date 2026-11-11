@@ -1,4 +1,5 @@
 # VlamCOM
+Vlaamse Comm en SW
 Fictief Communicatie en software bedrijf in Vlaanderen.
 
 Samenvatting installatie VlamcomDB:
