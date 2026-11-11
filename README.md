@@ -2,7 +2,13 @@
 Fictief Communicatie en software bedrijf in Vlaanderen.
 
 Vanuit Linux makkelijk installeerbaar met
+
+```bash
 git clone https://github.com/jmo2300/VlamCOM
+```
+
+
+
 
 ---
 
