@@ -11,9 +11,15 @@ git clone https://github.com/jmo2300/VlamCOM
 ```bash
 cd VlamCOM/
 chmod +x setup.sh
+chmod +x hints.sh
 ./setup.sh
 ```
 
+
+Extra SQL tips kan je in je Linux command line vragen met:
+```bash
+~/VlamCOM/hints.sh
+```
 
 
 ---
@@ -31,6 +37,7 @@ Alle databasestructuren, tabelnamen en kolomnamen zijn volledig in **lowercase**
 * **`01_setup_user_db.sql`**: Wordt uitgevoerd met **root**-rechten. Het verwijdert eventuele bestaande versies van `vlamcomdb` en de gebruiker `vlamcom`, maakt deze opnieuw aan en kent de nodige rechten toe.
 * **`02_create_and_fill.sql`**: Wordt uitgevoerd onder de gebruiker **`vlamcom`**. Het verwijdert bestaande tabellen, maakt de tabellen `afdelingen` en `medewerkers` aan en vult deze met testdata.
 * **`setup.sh`**: Een Bash-script dat het volledige proces automatisch in de juiste volgorde uitvoert.
+* **`hints.sh`**: Een Bash-script dat SQL hints toont.
 
 ---
 
