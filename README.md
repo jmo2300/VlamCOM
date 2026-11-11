@@ -28,7 +28,7 @@ Alle databasestructuren, tabelnamen en kolomnamen zijn volledig in **lowercase**
 
 ---
 
-## 🛠️ Databasestructuur & Gegevens
+## Databasestructuur & Gegevens
 
 ### 1. Gebruikersgegevens MySQL
 * **Database:** `vlamcomdb`
