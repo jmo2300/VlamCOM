@@ -6,20 +6,19 @@
 
 set -e
 
-GREEN='\033[0;32m'
-BLUE='\033[0;34m'
-RED='\033[0;31m'
+# Kleurcodes (helder cyan, groen en rood voor uitstekende contrast op zwart)
+GREEN='\033[1;32m'
+CYAN='\033[1;36m'
+RED='\033[1;31m'
 NC='\033[0m'
 
-echo -e "${BLUE}=== Starting VlamCom Database Setup ===${NC}"
+echo -e "${CYAN}=== Starting VlamCom Database Setup ===${NC}"
 
-# Vraag veilig om het MySQL root wachtwoord
-read -sp "Geef MySQL root password: " ROOT_PASS
-echo ""
+# 1. Voer de root setup uit via sudo mysql
+echo -e "${CYAN}[1/2] Database 'vlamcomdb' en gebruiker 'vlamcom' aanmaken via root (sudo)...${NC}"
+echo "Voer (indien gevraagd) je sudo-wachtwoord van Linux in:"
 
-# 1. Voer de root setup uit (Database en Gebruiker aanmaken)
-echo -e "${BLUE}[1/2] Database 'vlamcomdb' en gebruiker 'vlamcom' aanmaken via root...${NC}"
-mysql -u root -p"$ROOT_PASS" < 01_setup_user_db.sql
+sudo mysql < 01_setup_user_db.sql
 
 if [ $? -eq 0 ]; then
     echo -e "${GREEN}✓ Root setup succesvol afgerond.${NC}"
@@ -28,8 +27,8 @@ else
     exit 1
 fi
 
-# 2. Voer het aanmaken en vullen van de tabellen uit als gebruiker 'vlamcom'
-echo -e "${BLUE}[2/2] Tabellen aanmaken en vullen als gebruiker 'vlamcom'...${NC}"
+# 2. Voer het aanmaken en vullen van de tabellen uit als de nieuwe gebruiker 'vlamcom'
+echo -e "${CYAN}[2/2] Tabellen aanmaken en vullen als gebruiker 'vlamcom'...${NC}"
 mysql -u vlamcom -pvlamcompw vlamcomdb < 02_create_and_fill.sql
 
 if [ $? -eq 0 ]; then
