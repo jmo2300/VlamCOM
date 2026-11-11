@@ -132,7 +132,7 @@ INSERT INTO medewerkers (voornaam, achternaam, functie, afdelingid, locatie, sal
 ('Mireille', 'Duval', 'Marketing Director', 4, 'Herentals', 5400.00),
 ('Han', 'Burger', 'Frontend Developer', 1, 'Kasterlee', 3800.00),
 ('Dierk', 'Triese', 'HR Manager', 5, 'Kasterlee', 4200.00),
-('Bnnny', 'Goedman', 'Database Administrator', 2, 'Turnhout', 3900.00),
+('Benny', 'Goedman', 'Database Administrator', 2, 'Turnhout', 3900.00),
 ('Leon', 'Berg', 'IT Specialist', 1, 'Herentals', 4300.00),
 ('Alberto', 'Gomez', 'Content Writer', 4, 'Kasterlee', 3100.00),
 ('Murat', 'Çelik', 'Support Technician', 2, 'Poppel', 2700.00),
